@@ -1,28 +1,27 @@
 package listaexercicios;
 //SCCANNER IMPORTA NA FUNCAO Q USA OU GLOBAL ?
+
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class ex1 {
 
     public static void main(String[] args) {
-        //int v[] = {1, 2, 3, 4, 5};
-        //imprimirVetor(v);
-        criarVetor();
-        criarVetor();
+        laco();
+        //criarVetor();
     }
 
-    /*public static void imprimirVetor(int[] vetor) {
-        for (int i = 0; i < vetor.length; i++) {
-            System.out.println(vetor[i]);
-        }
-
-    }*/
+    public static void comparaVetor() {
+        int v1[], v2[], v3[];
+        Scanner input = new Scanner(System.in);
+        //v1 = new int[criarVetor()];
+        //v1 = input.criarVetor();    
+    }
 
     public static void criarVetor() {
         int vetorEscolhido[]; // declarei um vetor
         Scanner input = new Scanner(System.in);
-        System.out.print("Informe o tamanho do seu vetor: ");
+        System.out.print("Informe quantos elementos voce quer no vetor: ");
         int n = input.nextInt();
         vetorEscolhido = new int[n];// alocando espaço para o vetor
 
@@ -31,7 +30,17 @@ public class ex1 {
             vetorEscolhido[i] = input.nextInt();
             System.out.println(Arrays.toString(vetorEscolhido));
         }
-        //System.out.println(Arrays.toString(vetorEscolhido));
+    }
+
+    public static void laco() {
+        int n;
+        int vetor[];
+        Scanner input = new Scanner(System.in);
+        System.out.println("Informe quantos vetores quer criar: ");
+        n = input.nextInt();
+        for (int i = 0; i < n; i++) {
+            criarVetor() ;        
+        }
     }
 
 }
