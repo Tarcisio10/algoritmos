@@ -1,5 +1,4 @@
 package listaexercicios;
-//SCCANNER IMPORTA NA FUNCAO Q USA OU GLOBAL ?
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -7,15 +6,12 @@ import java.util.Scanner;
 public class ex1 {
 
     public static void main(String[] args) {
-        laco();
-        //criarVetor();
+        criarVetor();
     }
 
     public static void comparaVetor() {
         int v1[], v2[], v3[];
-        Scanner input = new Scanner(System.in);
-        //v1 = new int[criarVetor()];
-        //v1 = input.criarVetor();    
+        Scanner input = new Scanner(System.in);  
     }
 
     public static void criarVetor() {
@@ -31,10 +27,10 @@ public class ex1 {
             System.out.println(Arrays.toString(vetorEscolhido));
         }
     }
+    
+    public static void laco(int va[], int vb[]) {
+        int v3[]= new int [(va - vb)];
 
-    public static void laco() {
-        int n;
-        int vetor[];
         Scanner input = new Scanner(System.in);
         System.out.println("Informe quantos vetores quer criar: ");
         n = input.nextInt();
