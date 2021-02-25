@@ -1,5 +1,7 @@
 package listaexercicios;
 
+import java.util.Arrays;
+
 /*Escreva uma função que recebe dois vetores inteiros A[] e B[], em seguida, a sua
 função efetua a UNIÃO entre os vetores, ou seja, os elementos do vetor A mais aos
 elementos do vetor B, desde que os elementos de B não estejam presentes no vetor
@@ -13,22 +15,23 @@ public class ex2 {
     public static void main(String[] args) {
         int[] a = {7, 2, 5, 8, 4};
         int[] b = {4, 2, 9, 5};
-        String s = unirVetores(a, b);
-        System.out.println("" + s);
+        unirVetores(a, b);
+
     }
 
-    public static String unirVetores(int[] v1, int[] v2) {
-        String res = "";
+    public static void unirVetores(int[] v1, int[] v2) {
+        //String res = "";
         for (int i = 0; i < v1.length; i++) {
             for (int j = 0; j < v2.length; j++) {
                 if (v1[i] == v2[j]) {
-                    res += v1[i] + "";
-                    //System.out.println(res);
+                    int[] v3 = {v1[i]};
+                    System.out.println(Arrays.toString(v3));
                 }
 
             }
 
         }
-        return res;
+        //System.out.println(v3);
+        //return v3;
     }
 }

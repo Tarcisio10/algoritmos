@@ -29,8 +29,6 @@ public class ex1 {
     }
     
     public static void laco(int va[], int vb[]) {
-        int v3[]= new int [(va - vb)];
-
         Scanner input = new Scanner(System.in);
         System.out.println("Informe quantos vetores quer criar: ");
         n = input.nextInt();
