@@ -5,6 +5,8 @@
  */
 package listaexercicios;
 
+import java.util.Scanner;
+
 /**
  *
  * @author tbn
@@ -16,33 +18,29 @@ public class ex3Matriz {
     }
 
     public static void matrizQuadrada() {
-        int sumLinha, sumColuna;// sumMain, sumB;
-        int v[][] = {{1, 2},
-        {3, 4}};
-        //System.out.println(Arrays.toString(v));
-        //int matrizQuadrada[][] = {{1, 2}, {2, 4}};
-        //System.out.println(v.length);
-        //System.out.println(v[0].length);
+        int numLinha, numColuna;// sumMain, sumB;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Informe o numero linhas: ");
+        numLinha = input.nextInt();
+        System.out.print("Informe o numero de colunas: ");
+        numColuna = input.nextInt();
+        int v[][] = new int[numLinha][numColuna];
         int numLinhas = v.length;
-        System.out.println(numLinhas);
+        //System.out.println(numLinhas);
         int numColunas = v[0].length;
-        System.out.println(numColunas);
+        //System.out.println(numColunas);
         if (numLinhas == numColunas) {
             System.out.println("é uma matriz quadrada de tamanho : " + numLinhas + "x" + numColunas);
         } else {
             System.out.println("Não é uma matriz quadrada");
         }
-        //for (int i = 0; i < v.length; i++) {
+        for (int i = 0; i < numLinha; i++) {
+            for (int j = 0; j < numColuna; j++) {
+                System.out.println("Informe o numero na linha [" + (i + 1) + "] x coluna [" + (j + 1) + "]");
+                v[i][j] = input.nextInt();
+            }
+        }
 
-        /*for (int j = 0; j < v[0].length; j++) {
-                System.out.print(v[i][j]);
-            }*/
-        //}
-
-        /*for (int i = 0; i < v.length; i++) {
-            sumLinha = (v[1][0] + v[1][1]);
-            System.out.println(sumLinha + "soma dos elementos das linhas");
-        }*/
     }
 
 }
