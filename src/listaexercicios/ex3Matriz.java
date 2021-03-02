@@ -5,6 +5,7 @@
  */
 package listaexercicios;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -15,6 +16,7 @@ public class ex3Matriz {
 
     public static void main(String[] args) {
         matrizQuadrada();
+        //ImprimeMatriz();// passar por parametro
     }
 
     public static void matrizQuadrada() {
@@ -40,7 +42,15 @@ public class ex3Matriz {
                 v[i][j] = input.nextInt();
             }
         }
-
     }
 
+    public static int[][] ImprimeMatriz(int v[][]) {
+        for (int linha = 0; linha < v.length; linha++) {
+            for (int coluna = 0; coluna < v[linha].length; linha++) {
+                System.out.println(Arrays.toString(v) + "oi");
+            }
+        }
+        return v;
+    }
+    //System.out.println((v.length + "x" + v[0].length));
 }

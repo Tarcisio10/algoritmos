@@ -29,7 +29,7 @@ public class ex1 {
     public static void criaVetor() {
         int vetorEscolhido[]; // declarei um vetor
         Scanner input = new Scanner(System.in);
-        System.out.print("Informe quantos elementos voce quer no vetor: ");
+        System.out.print("Informe quantos elementos voce quer no vetor:");
         int n = input.nextInt();
         vetorEscolhido = new int[n];// alocando espaço para o vetor
         for (int i = 0; i < vetorEscolhido.length; i++) {
