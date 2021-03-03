@@ -13,7 +13,6 @@ import java.util.Scanner;
 public class ex1 {
 
     public static void main(String[] args) {
-        //criaVetor();
         laco();
     }
 
@@ -21,12 +20,17 @@ public class ex1 {
         Scanner input = new Scanner(System.in);
         System.out.println("Informe quantos vetores quer criar: ");
         int n = input.nextInt();
+        //cria matriz
+        int matriz[][] = new int[n][];//[n] qtd de vetores
         for (int i = 0; i < n; i++) {
-            criaVetor();
+            matriz[i] = criaVetor();
+            //criaVetor();
+            System.out.println(matriz.length);
         }
+        
     }
 
-    public static void criaVetor() {
+    public static int[] criaVetor() {
         int vetorEscolhido[]; // declarei um vetor
         Scanner input = new Scanner(System.in);
         System.out.print("Informe quantos elementos voce quer no vetor:");
@@ -38,6 +42,7 @@ public class ex1 {
             System.out.println(Arrays.toString(vetorEscolhido));
 
         }
+        return vetorEscolhido;
 
     }
 

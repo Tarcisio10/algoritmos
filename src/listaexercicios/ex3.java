@@ -2,6 +2,9 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+O traço de uma matriz é a soma dos elementos de sua diagonal
+principal. Implemente uma função que receba uma matriz quadrada
+(número de linhas = número de colunas) e devolva o seu traço.
  */
 package listaexercicios;
 
@@ -12,30 +15,19 @@ import java.util.Scanner;
  *
  * @author tbn
  */
-public class ex3Matriz {
-
+public class ex3 {
+    
     public static void main(String[] args) {
         matrizQuadrada();
-        //ImprimeMatriz();// passar por parametro
+        
     }
 
     public static void matrizQuadrada() {
-        int numLinha, numColuna;// sumMain, sumB;   
-        Scanner input = new Scanner(System.in);
-        System.out.print("Informe o numero linhas: ");
-        numLinha = input.nextInt();
-        System.out.print("Informe o numero de colunas: ");
-        numColuna = input.nextInt();
-        int v[][] = new int[numLinha][numColuna];
-        int numLinhas = v.length; //System.out.println(numLinhas);
-        int numColunas = v[0].length; //System.out.println(numColunas);
-        if (numLinhas == numColunas) {
-            do{for (int i = 0; i < v[numLinhas][i]; i++) {
-                if (true) {              
-                }
-            }
-          
-            System.out.println("é uma matriz quadrada de tamanho : " + numLinhas + "x" + numColunas);
+        
+        int v[][] = {{1,2,3},{2,4,6},{5,7,8}};
+
+        if (v.length == v[0].lenght) {
+            //System.out.println("é uma matriz quadrada de tamanho : " + numLinhas + "x" + numColunas);
 
         } else {
             System.out.println("Não é uma matriz quadrada");
@@ -56,5 +48,5 @@ public class ex3Matriz {
         }
         return v;
     }
-    //System.out.println((v.length + "x" + v[0].length));
+    
 }
