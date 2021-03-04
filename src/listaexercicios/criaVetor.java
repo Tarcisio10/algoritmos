@@ -10,13 +10,13 @@ A[] = { 3, 9, 11} e B[]= {2, 6, 1} então A B= {}*/
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ex1 {
+public class criaVetor {
 
     public static void main(String[] args) {
         laco();
     }
 
-    public static void laco() {
+    static void laco() {
         Scanner input = new Scanner(System.in);
         System.out.println("Informe quantos vetores quer criar: ");
         int n = input.nextInt();
@@ -27,10 +27,10 @@ public class ex1 {
             //criaVetor();
             System.out.println(matriz.length);
         }
-        
+
     }
 
-    public static int[] criaVetor() {
+    static int[] criaVetor() {
         int vetorEscolhido[]; // declarei um vetor
         Scanner input = new Scanner(System.in);
         System.out.print("Informe quantos elementos voce quer no vetor:");
