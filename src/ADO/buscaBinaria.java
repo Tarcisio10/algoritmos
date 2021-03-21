@@ -1,3 +1,4 @@
+package ADO;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -22,7 +23,7 @@ public class buscaBinaria {
 
     public static int buscaBinaria(int v[], int x) {
         int i = 0;
-        int f = v.lenght - 1;
+        int f = v.length - 1;
         while (i <= f) {
             int m = (i + f) / 2;
             if (v[m] == x) {

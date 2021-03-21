@@ -1,40 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+package ADO;
 
-/**
- *
- * @author tbn
- */
-public class LRU {
-
-    private int qtdePaginas;
-    private int qtdeframes;
-    int[] paginas;
-    int[][] matriz;
-    int[] falhas;
-    int[] distancia;
+public class LRU implements AlgoritmoDeSubstituicao {
+    private int quantidadeDePaginas;
+    private int quantidadeDeFrames;
+    private int[] paginas;
+    private int[][] matriz;
+    private int[] falhas;
+    private int[] distancia;
 
     public LRU() {
         System.out.println("LRU");
     }
 
+    @Override
     public void setPaginas(int[] paginas) {
         this.paginas = paginas;
     }
 
-    public void setQtdePaginas(int qtdePaginas) {
-        this.qtdePaginas = qtdePaginas;
+    @Override    
+    public void setQuantidadeDePaginas(int quantidadeDePaginas) {
+        this.quantidadeDePaginas = quantidadeDePaginas;
     }
 
-    public void setQtdeframes(int atdeframes) {
-        this.qtdeframes = qtdeframes;
+    @Override
+    public void setQuantidadeDeFrames(int quantidadeDeFrames) {
+        this.quantidadeDeFrames = quantidadeDeFrames;
     }
 
+    @Override
     public void iniciarFalhas() {
-        for (int i = 0; i < qtdePaginas; i++) {
+        for (int i = 0; i < quantidadeDePaginas; i++) {
             falhas[i] = 0;
         }
     }

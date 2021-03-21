@@ -12,19 +12,20 @@ import java.util.Arrays;
  * @author tbn
  */
 public class imprimeMatriz {
+
     public static void main(String[] args) {
-        
+
     }
-    
-        static int[][] ImprimeMatriz(int v[][]) {
+
+    static int[][] ImprimeMatriz(int v[][]) {
         for (int linha = 0; linha < v.length; linha++) {
             //res = "";
             for (int coluna = 0; coluna < v[0].length; coluna++) {
                 System.out.println(Arrays.toString(v) + "oi");
-             //   res += v;
+                //   res += v;
             }
         }
         return v;
-  
+
     }
 }
