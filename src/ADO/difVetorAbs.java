@@ -15,9 +15,21 @@ import java.util.Scanner;
 public class difVetorAbs {
 
     public static void main(String[] args) {
-        int[] vetor = criaVetor();//{10, 15, 53, 52, 41, 100};
-        int numDif = difAbsol(vetor);
-        System.out.println(numDif);
+
+        int[] v = {2, 4, 6, 9};
+        Arrays.sort(v);
+        //int x = difAbsol(v);
+        for (int i = 0; i < v.length; i++) {
+            System.out.println(v[i]+ "");
+        }
+        System.out.println("");
+        //System.out.println(x);
+        //int [][] vetorEscolhido = laco();
+        //int numDif = difAbsol(vetorEscolhido);
+        /*int[] vetor = criaVetor();//{10, 15, 53, 52, 41, 100};
+        
+        int numDif = difAbsol(vetorEScolhido);
+        System.out.println(numDif);*/
     }
 
     static int[] criaVetor() {
@@ -45,7 +57,7 @@ public class difVetorAbs {
         for (int i = 0; i < n; i++) {
             matriz[i] = criaVetor();
             //criaVetor();
-            System.out.println(matriz.length);
+            //System.out.println(matriz.length);
         }
 
     }
@@ -53,7 +65,9 @@ public class difVetorAbs {
     public static int difAbsol(int v[]) {
         int dif = 0;
         for (int i = 0; i < v.length; i++) {
+            
             for (int j = 0; j < v.length; j++) {
+                
                 int x = v[i] - v[j];
                 if (x > dif) {
                     dif = x;
