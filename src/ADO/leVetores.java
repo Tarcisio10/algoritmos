@@ -12,15 +12,12 @@ import java.io.FileReader;
  *
  * @author tbn
  */
-public class leMatriz {
+public class leVetores {
     public static void main(String[] args) throws Exception {
-        int[] m = leVetor("matriz.txt");
-        for (int i = 0; i < m.length; i++) {
-            for (int j = 0; j < m.length; j++) {
-                
-            }
-            
-        }
+        /*int[] v = leVetor("vetor.txt");
+        for (int i = 0; i < v.length; i++) {
+            System.out.print(v[i] + " ");
+        }*/
     }
 
     public static int[] leVetor(String nomeArquivo) throws Exception {
@@ -35,18 +32,22 @@ public class leMatriz {
         int linha = Integer.parseInt(linha1);
         int coluna = Integer.parseInt(linha2);
         //criar matriz
-        int[][] matriz = new int[linha][coluna];
-        //separar os dados dos espaços da linha
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz[0].length; j++) {
-                String[][] dados = matriz.split(" ");//Monta vetor de string
+        int [][] matriz = new int [linha][coluna];
+        for (int i = 0; i < matriz[linha].length; i++) {
+            //String [] matrizi = matriz[linha].split(" ");
+            for (int j = 0; j < matriz[coluna].length; j++) {
+                
             }
         }
-        
+        //criar vetor
+        int[] vetor = new int[tam];
+        //separar os dados da linha
+        String[] dados = linha2.split(" ");//Monta vetor de string
         // armazenar os dados int no vetor 
         for (int i = 0; i < dados.length; i++) {//percorre o vetor de String
             vetor[i] = Integer.parseInt(dados[i]);// transformado e armazenando no vetor
         }
         return vetor;
     }
+    
 }
