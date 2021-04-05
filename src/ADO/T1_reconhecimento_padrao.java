@@ -6,15 +6,15 @@
 package ADO;
 
 import java.io.BufferedReader;
-
 import java.io.FileReader;
 
 /**
  *
  * @author tbn
  */
-public class LeArquivo {
+public class T1_reconhecimento_padrao {
 
+    //manipula e lê dados via arquivo texto
     public static void main(String[] args) throws Exception { //joga as exceções ao inves de tratar
         FileReader arquivo = new FileReader("exemplo.txt"); //passa o nome do arquivo com o conteudo
         BufferedReader input = new BufferedReader(arquivo);
@@ -26,5 +26,7 @@ public class LeArquivo {
         input.close();//fecha o buffer e o arquivo
 
     }
+    //manipulando vetores 
     
+
 }

@@ -14,7 +14,7 @@ import java.io.FileReader;
  */
 public class leMatriz {
     public static void main(String[] args) throws Exception {
-        int[] m = leVetor("matriz.txt");
+        int[][] m = leVetor("matriz.txt");
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m.length; j++) {
                 
@@ -23,7 +23,7 @@ public class leMatriz {
         }
     }
 
-    public static int[] leVetor(String nomeArquivo) throws Exception {
+    public static int[][] leVetor(String nomeArquivo) throws Exception {
         FileReader arquivo = new FileReader(nomeArquivo);
         BufferedReader input = new BufferedReader(arquivo);
         // Le 2 linhas arquivo 1ªlinha(qtdLinhas) 
@@ -39,7 +39,7 @@ public class leMatriz {
         //separar os dados dos espaços da linha
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[0].length; j++) {
-                String[][] dados = matriz.split(" ");//Monta vetor de string
+                String[][] dados = matriz.split(" ");//Monta matriz de string
             }
         }
         
