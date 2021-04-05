@@ -41,13 +41,6 @@ public class CentroGravidade {
         }
         leitorArquivo.close(); //Fecha o FileReader
 
-        //Mostra o tamanho dos dados se houver
-        if (dados != null) {
-            System.out.print("\tTamanho da linha: " + dados.length() + "\n");
-        } else {
-            System.out.println("\tTamanho da linha: " + 0 + "\n");
-        }
-
         valoresString = dados.split(" ");//Separa os valores da String dados com base em espaços
         valoresDouble = new double[valoresString.length - 1]; //Determina o tamanho do vetor 
 
