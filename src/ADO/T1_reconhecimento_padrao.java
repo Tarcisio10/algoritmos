@@ -1,17 +1,19 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Nós,
+Matheus Neres  
+Tarcisio Blois
+declaramos que
+todas as respostas são fruto de nosso próprio trabalho,
+não copiamos respostas de colegas externos à equipe,
+não disponibilizamos nossas respostas para colegas externos à equipe e
+não realizamos quaisquer outras atividades desonestas para nos beneficiar ou prejudicar outros.
  */
 package ADO;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-/**
- *
- * @author tbn
- */
+
 public class T1_reconhecimento_padrao {
 
     //manipula e lê os dados via arquivo texto
